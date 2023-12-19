@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+}
+
+.column {
+  text-align: center;
+  padding: 20px;
+}
+
+.leftNavbar {
+  flex: 20%;
+  background-color: #eef2f7;
+}
+
+.MainDataColumn {
+  flex: 50%;
+  background-color: white;
+}
+
+.rightNavbar {
+  flex: 30%;
+  background-color: #eef2f7;
+}
+
+.righ-left-row-container {
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: flex-end;
+
+}
+
+.row-container {
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+
+#main-content{
+  margin-top: -75px; /* Temporary decision must be changed after */
+
+  width: 104%; 
+  height: 110%; 
+}
+
+.col-lg-6 {
+  width: 50%;
+  float: left;
+  overflow: hidden; 
+}
+

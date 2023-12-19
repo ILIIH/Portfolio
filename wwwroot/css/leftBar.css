@@ -1,0 +1,62 @@
+@import 'constants/colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
+
+#leftBar{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: end;
+  background-color: var(--left_bar_color);
+}
+
+.bar-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.choosed  .bar-icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+#courses{
+  margin-top: 100px;
+}
+
+.choosed .bar-item-name{
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.choosed .bar-item-name::after {
+  content: '';
+  display: inline-block;
+  width: 5px; 
+  height: 14px; 
+  background-color: var(--primary_color); 
+  margin-left: 30px; 
+}
+
+.unchoosed .bar-icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  opacity: 0.5; 
+}
+
+.unchoosed .bar-item-name{
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-right: 30px;
+  color: var(--unchused_bar_text);
+}
+
+.bar-item:hover{
+  cursor: pointer;
+}
