@@ -1,14 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace MyCourses.Pages
+namespace MyCourses.Pages.Shared
 {
-    public class coursesModel : PageModel
+    public class _CourseRegistrationModel : PageModel
     {
         public void OnGet()
         {
         }
     }
 }
-
-

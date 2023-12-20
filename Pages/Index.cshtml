@@ -27,7 +27,7 @@
         </div>
         <!-- Central column -->
         <div class="test col-lg-6 d-none d-lg-block">
-            @await Html.PartialAsync("courses")
+        @await Html.PartialAsync("_Courses", new MyCourses.Pages.coursesModel())
         </div>
 
         <!-- Left bar -->

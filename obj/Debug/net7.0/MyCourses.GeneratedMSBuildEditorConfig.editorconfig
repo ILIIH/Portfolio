@@ -24,8 +24,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ILLIA_BRANCHUK/Programming/Web/MyCourses/MyCourses/Pages/Shared/courses.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXGNvdXJzZXMuY3NodG1s
+[C:/ILLIA_BRANCHUK/Programming/Web/MyCourses/MyCourses/Pages/Shared/_Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ILLIA_BRANCHUK/Programming/Web/MyCourses/MyCourses/Pages/Shared/_CourseDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Db3Vyc2VEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ILLIA_BRANCHUK/Programming/Web/MyCourses/MyCourses/Pages/Shared/_CourseRegistration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Db3Vyc2VSZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ILLIA_BRANCHUK/Programming/Web/MyCourses/MyCourses/Pages/Shared/_Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Db3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ILLIA_BRANCHUK/Programming/Web/MyCourses/MyCourses/Pages/Shared/_MyProjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9NeVByb2plY3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/ILLIA_BRANCHUK/Programming/Web/MyCourses/MyCourses/Pages/Shared/_ValidationScriptsPartial.cshtml]
