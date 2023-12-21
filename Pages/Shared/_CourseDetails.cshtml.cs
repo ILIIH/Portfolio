@@ -5,6 +5,7 @@ namespace MyCourses.Pages.Shared
 {
     public class _CourseDetailsModel : PageModel
     {
+
         public void OnGet()
         {
         }

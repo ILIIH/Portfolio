@@ -2,32 +2,57 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+
 }
 
 
     <!-- Right bar -->
     <div class="row">
         <div class="col-lg-3 d-none d-lg-block" id="leftBar">
-            <div class="bar-item choosed" id="courses">
+        <div class="bar-item choosed" id="courses" data-partial="_CourseDetails" >
                 <img class="bar-icon" src="image/home_icon.png" />
                 <div class="bar-item-name">General information</div>
             </div>
-            <div class="bar-item unchoosed" id="projects">
+        <div class="bar-item unchoosed" id="projects" data-partial="_Projects">
                 <img class="bar-icon" src="image/works_icon.png" />
                 <div class="bar-item-name">My projects</div>
             </div>
-            <div class="bar-item unchoosed" id="my_courses">
+        <div class="bar-item unchoosed" id="my_courses" data-partial="_Courses">
                 <img class="bar-icon" src="image/chip_icon.png" />
                 <div class="bar-item-name">My courses</div>
             </div>
-            <div class="bar-item unchoosed" id="cart">
+        <div class="bar-item unchoosed" id="cart" data-partial="_Cart">
                 <img class="bar-icon" src="image/cart_black.png" />
                 <div class="bar-item-name">Cart</div>
             </div>
         </div>
         <!-- Central column -->
         <div class="test col-lg-6 d-none d-lg-block">
-        @await Html.PartialAsync("_Courses", new MyCourses.Pages.coursesModel())
+
+
+        @{
+            var chosenPartial = ViewData["ChosenPartial"] as string;
+        }
+
+        @if (!string.IsNullOrEmpty(chosenPartial))
+        {
+            switch (chosenPartial)
+            {
+                case "_CourseDetails":
+                    @await Html.PartialAsync("_CourseDetails", new MyCourses.Pages.Shared._CourseDetailsModel())
+                    break;
+                case "_Projects":
+                    @await Html.PartialAsync("_Projects", new MyCourses.Pages.Shared._MyProjectsModel())
+                    break;
+                case "_MyCourses":
+                    @await Html.PartialAsync("_MyCourses", new MyCourses.Pages.coursesModel())
+                    break;
+                case "_Cart":
+                    break;
+                    // Add more cases for other partial views if needed
+            }
+        }
+
         </div>
 
         <!-- Left bar -->
@@ -84,7 +109,5 @@
             </div>
         </div>
     </div>
-
-  
 
 
