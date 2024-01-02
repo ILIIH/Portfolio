@@ -4,24 +4,22 @@
     ViewData["Title"] = "Home page";
 
 }
-
-
     <!-- Right bar -->
     <div class="row">
         <div class="col-lg-3 d-none d-lg-block" id="leftBar">
-        <div class="bar-item choosed" id="courses" data-partial="_CourseDetails" >
+        <div class="bar-item choosed" id="courses">
                 <img class="bar-icon" src="image/home_icon.png" />
                 <div class="bar-item-name">General information</div>
             </div>
-        <div class="bar-item unchoosed" id="projects" data-partial="_Projects">
+        <div class="bar-item unchoosed" id="projects">
                 <img class="bar-icon" src="image/works_icon.png" />
                 <div class="bar-item-name">My projects</div>
             </div>
-        <div class="bar-item unchoosed" id="my_courses" data-partial="_Courses">
+        <div class="bar-item unchoosed" id="my_courses">
                 <img class="bar-icon" src="image/chip_icon.png" />
                 <div class="bar-item-name">My courses</div>
             </div>
-        <div class="bar-item unchoosed" id="cart" data-partial="_Cart">
+        <div class="bar-item unchoosed" id="cart">
                 <img class="bar-icon" src="image/cart_black.png" />
                 <div class="bar-item-name">Cart</div>
             </div>
@@ -111,3 +109,31 @@
     </div>
 
 
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Handle click events for clickableDiv elements
+        $(".bar-item").click(function () {
+            var chosenPartial = $(this).attr("id");
+            loadPartialView(chosenPartial);
+        });
+
+        // Function to load partial views asynchronously
+        function loadPartialView(chosenPartial) {
+            console.log("ON CLICK " + '@Url.Action("LoadPartialView", "YourController")' + '?chosenPartial=' + chosenPartial);  // Corrected line
+
+            $.ajax({
+                url: '@Url.Action("LoadPartialView", "YourController")' + '?chosenPartial=' + chosenPartial,
+                type: 'GET',
+                success: function (result) {
+                    $("#partialViewContainer").html(result);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+    });  // Corrected line
+</script>
