@@ -165,6 +165,10 @@
       "PackagePath": "staticwebassets\\js\\desktop-navbar.js"
     },
     {
+      "Id": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\js\\desktop-navigation.js",
+      "PackagePath": "staticwebassets\\js\\desktop-navigation.js"
+    },
+    {
       "Id": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\js\\navbar.js",
       "PackagePath": "staticwebassets\\js\\navbar.js"
     },
