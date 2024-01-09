@@ -54,4 +54,6 @@
     font-size: 14pt;
   }
 
-  
+.course_details_btn:hover {
+    cursor: pointer
+}

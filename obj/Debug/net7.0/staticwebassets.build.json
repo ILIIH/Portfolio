@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hSpBZ3rtg6iYyhXD5gu8E3VxtCVbpzjqKdTlVKE6v4g=",
+  "Hash": "bnEcw8iW85U9znzcFNI1oTBkIW18jGpwqF2UopisT6U=",
   "Source": "MyCourses",
   "BasePath": "_content/MyCourses",
   "Mode": "Default",
@@ -695,23 +695,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\course_registration.js"
-    },
-    {
-      "Identity": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\js\\desctop-navigation.js",
-      "SourceId": "MyCourses",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\",
-      "BasePath": "_content/MyCourses",
-      "RelativePath": "js/desctop-navigation.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\desctop-navigation.js"
     },
     {
       "Identity": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\js\\desktop-navbar.js",
