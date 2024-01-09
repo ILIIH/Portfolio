@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
      $(document).ready(function () {
-        $(".bar-item").click(function () {
+         $(".bar-item").click(function () {
+             console.log("clicked item");
             var chosenPartial = $(this).attr("id");
             loadPartialView(chosenPartial);
-        });
+         });
+
+         $(".course_details_btn").click(function () {
+             console.log("clicked course_details_btn");
+             loadPartialView("course/name");
+         });
+
+       
 
         function loadPartialView(chosenPartial) {
             url = "";
@@ -22,6 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 case "cart":
                     url = "/Cart/"
                     break;
+                case "course":
+                    url = "/CourseDetailsModel/"
+                    break;
+                case "course/name":
+                    url = "/CourseDetailsModel/name"
+                    break;
                 default:
                 url = "/Courses/"
                     break;
@@ -31,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 url: url,
                 type: 'GET',
                 success: function (result) {
-                    console.log(result);
                     $("#main-content-column").html(result);
                 },
                 error: function (error) {

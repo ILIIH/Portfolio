@@ -157,12 +157,12 @@
       "PackagePath": "staticwebassets\\js\\course_registration.js"
     },
     {
-      "Id": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\js\\desctop-navigation.js",
-      "PackagePath": "staticwebassets\\js\\desctop-navigation.js"
-    },
-    {
       "Id": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\js\\desktop-navbar.js",
       "PackagePath": "staticwebassets\\js\\desktop-navbar.js"
+    },
+    {
+      "Id": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\js\\desktop-navigation.js",
+      "PackagePath": "staticwebassets\\js\\desktop-navigation.js"
     },
     {
       "Id": "C:\\ILLIA_BRANCHUK\\Programming\\Web\\MyCourses\\MyCourses\\wwwroot\\js\\navbar.js",

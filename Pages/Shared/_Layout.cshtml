@@ -9,29 +9,30 @@
     <link rel="stylesheet" href="~/css/rightBar.css" />
     <link rel="stylesheet" href="~/css/core.css" />
     <link rel="stylesheet" href="~/css/navbar.css" />
+
 </head>
 <body>
 
-    <header>
+    
         <div class="navbar">
             <img class="navbar_icon navbar-closed" />
             <div id="navbar_layout">
-                <a href="index.html">MY PROFILE</a>
-                <a href="courses.html">MY COURSES</a>
+                <a href="">MY PROFILE</a>
+            <a href="/Courses/">MY COURSES</a>
                 <a>CONTACTS</a>
             </div>
-            <a href="cart.html"><img class="cart" src="image/cart.png" /></a>
+            <a href="/Cart/"><img class="cart" src="image/cart.png" /></a>
         </div>
-    </header>
+   
        
      @RenderBody()
 
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/navbar.js"></script>
-    <script src="~/js/desktop-navbar.js"></script>
-    <script src="~/js/desctop-navigation.js"></script>
+    <script src="~/js/navbar.js?v=1.0"></script>
+    <script src="~/js/desktop-navbar.js?v=1.0"></script>
+    <script src="~/js/desktop-navigation.js?v=1.2"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

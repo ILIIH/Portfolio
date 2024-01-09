@@ -1,4 +1,4 @@
-﻿@page "/CourseDetailsModel/"
+﻿@page "/CourseDetailsModel/name"
 @model MyCourses.Pages.Shared._CourseDetailsModel
 @{
 }
@@ -10,9 +10,9 @@
 
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/course_details.css" />
-    <link rel="stylesheet" href="css/core.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="~/css/course_details.css" />
+    <link rel="stylesheet" href="~/css/core.css" />
+    <link rel="stylesheet" href="~/css/navbar.css" />
 </head>
 <body>
     <div class="navbar">
@@ -25,7 +25,7 @@
         <a href="cart.html"><img class="cart" src="image/cart.png" /></a>
     </div>
 
-    <img class="course-icon" src="image/ai_icon.png" />
+    <img class="course-icon" src="~/image/ai_icon.png" />
     <div class="course-name">Netural networks</div>
     <div class="course-cost">300$</div>
     <div class="course-attributes">
@@ -68,17 +68,17 @@
     <div class="plan-item">
         <div class="plan-item-name">Foundations of Natural Networks</div>
     </div>
-    <img class="arrow-icon" src="image/arrow_down.png" />
+    <img class="arrow-icon" src="~/image/arrow_down.png" />
 
     <div class="plan-item">
         <div class="plan-item-name">Foundations of Natural Networks</div>
     </div>
-    <img class="arrow-icon" src="image/arrow_down.png" />
+    <img class="arrow-icon" src="~/image/arrow_down.png" />
 
     <div class="plan-item">
         <div class="plan-item-name">Foundations of Natural Networks</div>
     </div>
-    <img class="arrow-icon" src="image/arrow_down.png" />
+    <img class="arrow-icon" src="~/image/arrow_down.png" />
 
     <div class="plan-item">
         <div class="plan-item-name">Foundations of Natural Networks</div>
@@ -86,11 +86,10 @@
 
     <a href="course_registration.html">
         <div class="registration-btn-float">
-            <img class="registration-btn-icon" src="image/web.png" />
+            <img class="registration-btn-icon" src="~/image/web.png" />
             <div class="registration-text">REGISTER</div>
         </div>
     </a>
 
-    <script src="js/navbar.js"></script>
-    <script src="js/course_details.js"></script>
+    <script src="~/js/course_details.js"></script>
 </body>
