@@ -1,62 +1,48 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var cart = localStorage.getItem("CartArr");
-  cart = Object.values(JSON.parse(cart));
+$(document).ready(function () {
+    var cart = localStorage.getItem("CartArr");
+    cart = Object.values(JSON.parse(cart));
 
-  var emptyCart = document.querySelector(".empty-cart");
-  var fullCart = document.querySelector(".fullCart");
-  var fullPrice = document.querySelector(".total-text"); 
+    var emptyCart = $(".empty-cart");
+    var fullCart = $(".fullCart");
+    var fullPrice = $(".total-text");
 
-  cart = cart.filter((value, index, self) => {
-      return self.indexOf(value) === index;
-  });
+    cart = cart.filter((value, index, self) => {
+        return self.indexOf(value) === index;
+    });
 
-  if (cart.length > 0) {
-    emptyCart.style.display = "none";
-    emptyCart.style.visibility = "hidden";
-    fullCart.style.visibility = "visible";
+    if (cart.length > 0) {
+        emptyCart.css("display", "none");
+        emptyCart.css("visibility", "hidden");
+        fullCart.css("visibility", "visible");
 
-    cart.forEach((item) => {
-      let cartItemWrapper = document.createElement("div");
-      cartItemWrapper.classList.add("item");
+        $.each(cart, function (index, item) {
+            let cartItemWrapper = $("<div>").addClass("item");
 
-      let imgDiv = document.createElement("div");
-      let imgElement = document.createElement("img");
-      imgElement.src = "image/ai_icon.png"; 
-      imgElement.classList.add("cart-img");
-      imgDiv.appendChild(imgElement);
-     
+            let imgDiv = $("<div>");
+            let imgElement = $("<img>").attr("src", "image/ai_icon.png").addClass("cart-img");
+            imgDiv.append(imgElement);
 
+            let cartInfo = $("<div>").addClass("cart-item-info");
 
-      let cartInfo = document.createElement("div");
-      cartInfo.classList.add("cart-item-info");
+            let textDateDiv = $("<div>").text("date : 07/12/2023");
+            let textPriceDiv = $("<div>").text("price : 33£");
+            let courseName = $("<div>").text(item);
 
-      let textDateDiv = document.createElement("div");
-      textDateDiv.textContent = "date : 07/12/2023";
+            cartInfo.append(courseName);
+            cartInfo.append(textDateDiv);
+            cartInfo.append(textPriceDiv);
 
-      let textPriceDiv = document.createElement("div");
-      textPriceDiv.textContent = "price : 33£";
+            cartItemWrapper.append(cartInfo);
+            cartItemWrapper.append(imgDiv);
 
-      let courseName = document.createElement("div");
-      courseName.textContent = item;
+            fullCart.append(cartItemWrapper);
+        });
 
-      cartInfo.appendChild(courseName);
-      cartInfo.appendChild(textDateDiv);
-      cartInfo.appendChild(textPriceDiv);
-   
-
-      cartItemWrapper.appendChild(cartInfo);
-      cartItemWrapper.appendChild(imgDiv);
-
-      fullCart.appendChild(cartItemWrapper);
-  });
-    fullPrice.textContent = "TOTAL " + 33*cart.length+"£"; 
-
-  } 
-  else 
-  {
-    emptyCart.style.display = "block";
-    emptyCart.style.visibility = "visible";
-    fullCart.style.display = "none";
-    fullCart.style.visibility = "hidden";
-  }
+        fullPrice.text("TOTAL " + 33 * cart.length + "£");
+    } else {
+        emptyCart.css("display", "block");
+        emptyCart.css("visibility", "visible");
+        fullCart.css("display", "none");
+        fullCart.css("visibility", "hidden");
+    }
 });

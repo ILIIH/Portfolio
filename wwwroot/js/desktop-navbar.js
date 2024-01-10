@@ -1,13 +1,8 @@
-var allBarItems = document.querySelectorAll(".bar-item");
+$(document).ready(function () {
+    var allBarItems = $(".bar-item");
 
-allBarItems.forEach(function (bar_item) {
-  bar_item.addEventListener("click", function () {
-    allBarItems.forEach(function (item) {
-      item.classList.remove("choosed");
-      item.classList.add("unchoosed");
+    allBarItems.click(function () {
+        allBarItems.removeClass("choosed").addClass("unchoosed");
+        $(this).addClass("choosed").removeClass("unchoosed");
     });
-
-    bar_item.classList.add("choosed");
-    bar_item.classList.remove("unchoosed");
-  });
 });
