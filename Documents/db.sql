@@ -1,7 +1,7 @@
 CREATE TABLE `courses` (
   `course_id` integer PRIMARY KEY,
-  `course_name` char(20),
-  `course_img_link` char(40)
+  `course_name` char(100),
+  `course_img_link` char(200)
 );
 
 CREATE TABLE `course_details` (
@@ -10,33 +10,33 @@ CREATE TABLE `course_details` (
   `tasks_amount` integer,
   `online_classes_amount` integer,
   `offline_classes_amount` integer,
-  `course_description` char(300),
+  `course_description` char(1000),
   `tutor_id` integer
 );
 
 CREATE TABLE `course_tutors` (
   `tutor_id` integer PRIMARY KEY,
-  `tutor_name` cahr(20),
-  `tutor_img_link` char(40)
+  `tutor_name` cahr(100),
+  `tutor_img_link` char(200)
 );
 
 CREATE TABLE `projects` (
   `project_id` integer PRIMARY KEY,
   `tutor_id` integer,
-  `project_name` char(40),
-  `project_photo` char(40)
+  `project_name` char(100),
+  `project_photo` char(200)
 );
 
 CREATE TABLE `project_reps` (
   `reps_id` integer PRIMARY KEY,
   `project_id` integer,
-  `reps_name` char(40)
+  `reps_name` char(100)
 );
 
 CREATE TABLE `plan_items` (
   `plan_id` integer PRIMARY KEY,
   `course_id` integer,
-  `plan_item_name` char(40)
+  `plan_item_name` char(100)
 );
 
 CREATE TABLE `project_tools` (
@@ -49,8 +49,8 @@ CREATE TABLE `project_tools` (
 CREATE TABLE `skills` (
   `skill_id` integer PRIMARY KEY,
   `tutor_id` integer,
-  `skill_name` char(40),
-  `skill_photo` char(40)
+  `skill_name` char(100),
+  `skill_photo` char(100)
 );
 
 ALTER TABLE `course_details` ADD FOREIGN KEY (`course_id`) REFERENCES `courses` (`course_id`);
