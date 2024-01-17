@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 public class Course
 {
- 
+    [Key]
     [Column("course_id")]
     public int CourseId { get; set; }
 

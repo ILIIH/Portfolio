@@ -16,29 +16,26 @@ namespace MyCourses
 
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddDbContext<RazorPagesProfile>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("RazorPagesMovieContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesMovieContext' not found."))
+                options.UseSqlServer(builder.Configuration.GetConnectionString("PortfolioContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesMovieContext' not found."))
                 .EnableDetailedErrors()
                 );
 
            
-
+     
             var app = builder.Build();
 
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
 
-                SeedData.Initialize(services);
+                var coursesDAO = new CoursesDAO(services);
+                var courses = coursesDAO.getAllCourses();
+      
             }
 
-            var logger = app.Logger;
 
-            logger.LogInformation("Starting application...");
-
-           
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
@@ -56,7 +53,6 @@ namespace MyCourses
             app.UseAuthorization();
 
             app.MapRazorPages();
-            logger.LogInformation("Application started. !!!");
 
             app.Run();
 

@@ -1,7 +1,9 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 public class CourseDetails
 {
+    [Key]
     [Column("course_id")]
     public int CourseId { get; set; }
 

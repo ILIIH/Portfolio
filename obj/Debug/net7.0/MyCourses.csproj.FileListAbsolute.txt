@@ -1,5 +1,4 @@
 C:\ILLIA_BRANCHUK\Programming\Web\MyCourses\MyCourses\bin\Debug\net7.0\appsettings.Development.json
-C:\ILLIA_BRANCHUK\Programming\Web\MyCourses\MyCourses\bin\Debug\net7.0\appsettings.json
 C:\ILLIA_BRANCHUK\Programming\Web\MyCourses\MyCourses\bin\Debug\net7.0\MyCourses.staticwebassets.runtime.json
 C:\ILLIA_BRANCHUK\Programming\Web\MyCourses\MyCourses\bin\Debug\net7.0\MyCourses.exe
 C:\ILLIA_BRANCHUK\Programming\Web\MyCourses\MyCourses\bin\Debug\net7.0\MyCourses.deps.json

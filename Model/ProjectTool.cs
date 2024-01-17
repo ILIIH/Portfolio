@@ -1,7 +1,9 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 public class ProjectTool
 {
+    [Key]
     [Column("project_tool_id")]
     public int ProjectToolId { get; set; }
 
