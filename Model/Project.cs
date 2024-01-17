@@ -1,7 +1,9 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 public class Project
 {
+    [Key]
     [Column("project_id")]
     public int ProjectId { get; set; }
 
