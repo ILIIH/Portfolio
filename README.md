@@ -2,7 +2,7 @@
 
 ## **1. Overview.**
 
-This is my website - portfolio. 
+I was boring and decided to do any app that chatGPT will offer me. Behold my portfolio )) 
 
 ## **Contents:**
 
